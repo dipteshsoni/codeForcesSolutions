@@ -1,0 +1,116 @@
+// #include <bits/stdc++.h> // including all header files at once;
+using namespace std;
+#define ll long long
+#define pb push_back
+#define f first
+#define s second
+typedef vector<int> vi;
+typedef pair<int, int> pi;
+
+void solutionOfTheProblem(); // declaring func Prototype ;
+void printarr(vi &v)
+{
+    for (int i = 0; i < v.size(); i++)
+    {
+        cout << v[i];
+    }
+    cout << endl;
+}
+
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int testCases = 1;
+    // cin >> testCases;
+    while (testCases--)
+    {
+        solutionOfTheProblem(); // Calling the func which will solve the problem ;
+    }
+    return 0;
+}
+
+void solutionOfTheProblem()
+{
+    // Write Code here;
+    // codeby diptesh_532
+    string x;
+    cin >> x;
+
+    if (x[0] > 52 && x[0] != 57)
+    {
+        x[0] = 57 - x[0] + 48;
+    }
+    for (int i = 1; i < x.length(); i++)
+    {
+        if (x[i] > 52)
+        {
+            x[i] = 57 - x[i] + 48;
+        }
+    }
+
+    // cout<<s;
+    // ll ans = stoi(x);
+    cout << x;
+
+    return;
+}
+https://codeforces.com/contest/514/problem/A
+
+#include <bits/stdc++.h> // including all header files at once;
+using namespace std;
+#define ll long long
+#define pb push_back
+#define f first
+#define s second
+typedef vector<int> vi;
+typedef pair<int, int> pi;
+
+void solutionOfTheProblem(); // declaring func Prototype ;
+void printarr(vi &v)
+{
+    for (int i = 0; i < v.size(); i++)
+    {
+        cout << v[i];
+    }
+    cout << endl;
+}
+
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int testCases = 1;
+    // cin >> testCases;
+    while (testCases--)
+    {
+        solutionOfTheProblem(); // Calling the func which will solve the problem ;
+    }
+    return 0;
+}
+
+void solutionOfTheProblem()
+{
+    // Write Code here;
+    // codeby diptesh_532
+    string x;
+    cin >> x;
+
+    if (x[0] > 52 && x[0] != 57)
+    {
+        x[0] = 57 - x[0] + 48;
+    }
+    for (int i = 1; i < x.length(); i++)
+    {
+        if (x[i] > 52)
+        {
+            x[i] = 57 - x[i] + 48;
+        }
+    }
+
+    // cout<<s;
+    // ll ans = stoi(x);
+    cout << x;
+
+    return;
+}
