@@ -1,0 +1,58 @@
+#include <bits/stdc++.h> // including all header files at once;
+using namespace std;
+#define ll long long
+#define pb push_back
+#define f first
+#define s second
+typedef vector<int> vi;
+typedef pair<int, int> pi;
+
+void solutionOfTheProblem(); // declaring func Prototype ;
+void printarr(vi &v)
+{
+    for (int i = 0; i < v.size(); i++)
+    {
+        cout << v[i];
+    }
+    cout << endl;
+}
+
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int testCases = 1;
+    // cin >> testCases;
+    while (testCases--)
+    {
+        solutionOfTheProblem(); // Calling the func which will solve the problem ;
+    }
+    return 0;
+}
+
+void solutionOfTheProblem()
+{
+    // Write Code here;
+    // codeby diptesh_532
+    int arr[5][5];
+    int x, y;
+    for (int i = 0; i < 5; i++)
+    {
+        for (int j = 0; j < 5; j++)
+        {
+            cin >> arr[i][j];
+            if (arr[i][j] == 1)
+            {
+                x = i + 1;
+                y = j + 1;
+            }
+        }
+    }
+
+    int ans = 0;
+    ans += abs(3 - x);
+    ans += abs(3 - y);
+
+    cout << ans;
+    return;
+}
